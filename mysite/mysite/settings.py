@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'expenses',
 ]
-
+CURRENCY = '€'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -78,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'gastosdb',
-	'USER': 'odoo15',
+	    'USER': 'odoo15',
         'PASSWORD': 'industr2',
         'HOST': 'odoo15-industria.ctmuryjndvfh.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
